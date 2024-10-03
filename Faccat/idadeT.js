@@ -15,7 +15,7 @@ while(cont == 1){
     let mesA = data.getMonth()
     let anoA = data.getFullYear()
 
-    let tempoVida = 365*(anoA-ano)+30*(mesA-mes)+(diaA-dia);
+    let tempoVida = 365*(anoA-ano)+30*((mesA+1)-mes)+((diaA-1)-dia);
     
     console.log("O seu tempo de vida em dias, é equivalente a:", tempoVida," dias")
 
