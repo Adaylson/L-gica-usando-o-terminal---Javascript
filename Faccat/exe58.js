@@ -1,24 +1,22 @@
-//ler um numero e escrever do 1 ate ele, não sendo considerado numeros negativos
+// escrever do 10 ao 1 usado o do while
 
 const entrada = require('prompt-sync')()
-console.log('Bem vindo a minha função ')
 let contador = 1
+console.log('Bemvindo a minha função')
 console.log()
-
 while(contador == 1){
-    
-    let limite = parseInt(entrada('Digite até onde você quer que seja gerado: '))
+    console.log('Gerando sequencia...')
     console.log()
-    console.log('Gerando numeros....')
-    console.log()
-    for(let i = 1; i <= limite; i++){
+    let i = 10
+    do{
         console.log(i)
-    }
+        i -= 1
+    } while(i > 0)
     console.log()
     console.log('Função finalizada com sucesso!')
     console.log('Deseja fazer novamente ?')
     console.log('[1]sim [0]não')
-    contador = parseInt(entrada(''))
+    contador = parseInt(entrada())
     console.log()
 }
 console.log('Obrigado por usar a minha função')
