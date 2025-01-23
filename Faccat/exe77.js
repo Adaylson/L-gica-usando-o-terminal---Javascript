@@ -1,0 +1,1 @@
+// Função escrita no papel

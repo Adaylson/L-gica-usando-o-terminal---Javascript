@@ -21,3 +21,4 @@ while(contador == 1){
 }
 console.log('Obrigado por usar a minha função')
 console.log('Até mais tarde :)')
+console.log()
