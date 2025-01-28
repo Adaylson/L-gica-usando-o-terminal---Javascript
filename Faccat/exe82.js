@@ -1,12 +1,15 @@
-console.log('Bem vindo a minha função')
+//armazenar 10 numeros em uma matriz, logo em seguida ler outra variavel e criar um array multiplicando todos os valores pela variavel criada 
 
-const entrada = require('prompt-sync')()
-let q = []
+const MultiplicacaoMatriz = () => {
+    let P = new Array(10).fill().map(() => (parseInt(Math.random()*50).toFixed(0)))
+    console.log(P)
+    let x = parseInt((Math.random()*50).toFixed(0))
+    console.log(x)
+    let F = []
+    for(let i = 0;i < 10;i++){
+        F[i] = P[i] * x
+    }
+    return `O Array ficou assim: ${F}`
+}
 
-for(let i = 0; i< 20; i++ ){
-    q[i] = parseInt(entrada(`Digite o ${i+1}º numero do vetor: `))
-}
-for(let i = 19; i>=0; i--){
-    console.log(q[i])
-}
-console.log('Função finalizada')
+console.log(MultiplicacaoMatriz())
